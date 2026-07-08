@@ -6,3 +6,5 @@ export * from './laurent.js';
 export * from './diagram.js';
 export * from './bracket.js';
 export * from './braid.js';
+export * from './reidemeister.js';
+export * from './tangle.js';
