@@ -66,7 +66,9 @@ integer (bigint) coefficients throughout, no runtime dependencies.
 - `src/enumerate` — enumeration of positions/entanglement classes and the
   reconciliation with the 157-state census; `npm run enumerate` prints the
   summary and writes `results/enumeration.json`. Phase 2 (done).
-- `web/` — visualization app (Vite). Phase 3.
+- `web/` — interactive visualization (Vite + three.js): 3D dancers and a 2D
+  tangle diagram rendered from the same model data; `npm run dev`. Phase 3
+  (done).
 
 ## Design decisions (core)
 
@@ -242,6 +244,49 @@ hold; turn + reverse-turn unwinds while two same-way turns do not; leader
 and follower turns commute with each other but not with crossing the holds.
 The braid layer sees arm–arm entanglement only; torso wraps (hammerlocks,
 cuddles) live in the tangle layer.
+
+## The visualization (`web/`)
+
+`npm run dev` serves an interactive viewer (Vite + three.js) that renders
+positions directly from the phase-2 model — the same `BuiltPosition` data
+the census enumeration uses, so what is drawn is exactly what was counted.
+
+- **3D view**: two stylized dancers in the canonical facing stance. Torsos
+  are thick bars (with translucent floor-to-ceiling extensions showing the
+  obstacle convention); arms are colored tubes following the braid-grid
+  strand paths, bulging toward or away from the viewer at each crossing
+  according to the braid letter's sign, so every over/under is visible and
+  correct by construction. Grips are drawn as caps joining the two hand
+  endpoints; hammerlocked grips sit past the torso bar in the behind-back
+  zone. Free hammerlocked hands (no strand, no topology) are posed
+  semi-transparent behind the back. Orbit/zoom with the mouse. One honest
+  stylization: torso bars lean where arms pass them, because the bars are
+  drawn as their actual tangle strands rather than straightened.
+- **2D view**: a classical braid-style tangle diagram driven by the same
+  layout — under-strands drawn with gaps at crossings, thick torso bars,
+  labeled shoulder/torso endpoints, grip caps, and zone shading
+  (front / behind-back) that follows the torso strands.
+- **Picker**: the named holds (open, handshake, crossed two-hand, cross
+  hold, hammerlock, cuddle/sweetheart), all 15 partitions under their dance
+  names, a spread of hammerlock states, and the flagged out-of-frame cells
+  (multi-grip, back-to-back), which show the reason instead of a fudged
+  drawing. Where a cell has several entanglement classes, a variant
+  selector switches between the locked over/under choices.
+- **Info panel**: partition, grips, hammerlocks, census category, number of
+  locked diagrams (and degenerate choices dropped), plus live invariants of
+  the current variant — string-linking sums, closure component count, and
+  the Jones polynomial of the canonical closure — computed in the browser
+  with the exact (bigint) arithmetic from `src/core`.
+
+## How to run everything
+
+```
+npm install        # installs the root and web workspaces
+npm test           # 128 tests: core calibration, census counts, projections
+npm run enumerate  # census + refinement summary; writes results/enumeration.json
+npm run dev        # interactive visualization at the printed local URL
+npm run build      # typechecked library build + production web build
+```
 
 ## Future extensions
 
