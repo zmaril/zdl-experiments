@@ -1,0 +1,36 @@
+# Builds the experiments site as a CI check on every push and uploads the
+# built site as an artifact. No deploy here: Cloudflare Pages builds from its
+# own Git integration (see site/README.md, "Deploying", for the dashboard
+# settings and for the GitHub Pages alternative).
+name: site
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install
+        working-directory: site
+        run: npm ci
+
+      - name: Build
+        working-directory: site
+        run: npm run build
+
+      - name: Upload dist artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-dist
+          path: site/dist
+          if-no-files-found: error
