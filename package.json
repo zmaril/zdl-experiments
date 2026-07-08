@@ -1,0 +1,23 @@
+{
+  "name": "zdl-experiments",
+  "version": "0.1.0",
+  "description": "Knot-theoretic models (tangles, braids, links) of two-dancer hand connections, extending the set-partition model from zacksdancelab.com with spatial entanglement data.",
+  "type": "module",
+  "main": "dist/core/index.js",
+  "types": "dist/core/index.d.ts",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmaril/zdl-experiments.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
+  }
+}
