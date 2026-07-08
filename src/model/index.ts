@@ -8,3 +8,6 @@
  */
 export * from './partitions.js';
 export * from './census.js';
+export * from './tangles.js';
+export * from './positions.js';
+export * from './moves.js';
