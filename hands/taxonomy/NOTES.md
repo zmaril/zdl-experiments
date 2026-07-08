@@ -2,9 +2,11 @@
 
 ## The question
 
-At Zack's Dance Lab we already worked out the *connections* between two dancers' hands. Four
-hands, and you ask which ones are joined to which: that's a set partition of a 4-element set, and
-there are exactly B(4) = 15 of them. That layer is done. It answers "who holds whom."
+The *connections* between two dancers' hands have already been worked out — Maril's set-partition
+classification of two-dancer hand connections (see the ZDL blog post "A New Kind of Dance Science,"
+<https://www.zacksdancelab.com/blog/a-new-kind-of-dance-science>). Four hands, and you ask which
+ones are joined to which: that's a set partition of a 4-element set, and there are exactly
+B(4) = 15 of them. That layer is done. It answers "who holds whom."
 
 It does not answer "*how* do they hold." A handshake hold and a West Coast Swing hook grip can be
 the very same connection — leader's right to follower's left, one join — and feel like completely
@@ -21,7 +23,7 @@ holds which, but the geometry and mechanics of the mutual grasp.
 No. Nobody has. The gap is real, and it is specific. The grasp taxonomies everyone cites — Napier,
 Cutkosky, Feix — classify *one* hand gripping a *passive object*, and every one of their assumptions
 breaks when the "object" is another hand that is gripping you back. Dance's own codifications (NDCA,
-Laird, ISTD, CALLERLAB) stop exactly where our set-partition work already stopped: at which-hand-
+Laird, ISTD, CALLERLAB) stop exactly where Maril's set-partition work already stopped: at which-hand-
 holds-which. The human-human haptics literature — handshakes, hand-holding, partnered-stepping
 robots — treats the mutual grip as a black-box force channel and measures newtons, never shape. The
 closest living things to a mutual-grasp taxonomy are in sport: acroyoga's named weight-bearing
@@ -50,7 +52,8 @@ The ceiling of formal ballroom hold classification. Defines a "Hold" as the poin
 between partners and enumerates Traditional Ballroom Hold, Frame Hold, Hand Holds (Single R-to-L /
 L-to-R, Double, Handshake R-to-R / L-to-L), Shadow/Cuddle Holds, Crossed Hand Holds, Hammerlock,
 Hand(s) to Body, No Hold. Every distinction is *which-hand-to-which-hand* — the exact set-partition
-level ZDL already formalized — with zero content on finger, thumb, or palm mechanics. Bonus: it
+level Maril's classification already formalized — with zero content on finger, thumb, or palm
+mechanics. Bonus: it
 treats Position, Proximity (Contact/Close/Extended/Apart/Away), Feet, and Timing as independent
 axes, a nice precedent for keeping hold/position/proximity orthogonal.
 
@@ -106,7 +109,8 @@ level mechanics. Personal notes, not peer-reviewed.
 <https://www.eijkhout.net/lead_follow/arm_tone.html> **[search-verified]**
 Long analytical essays by a scientist-dancer. Treats connection as forces and tone
 (compression/leverage, ounces of pressure), not grip morphology. The closest thing to physics-minded
-dance writing pre-ZDL, and it confirms the analytical tradition focuses on force, not grasp topology.
+dance writing predating Maril's set-partition work, and it confirms the analytical tradition focuses
+on force, not grasp topology.
 
 **Swing It! (Australia) — "Beginner Tip: Hand Holds"; dogpossum.org connection essays.**
 <https://swingit.com.au/tips-beginners-1/>,
@@ -152,8 +156,9 @@ encyclopedic layer mirrors the pedagogy: holds = positions, connection = forces,
 MIT News <https://news.mit.edu/2004/dancerobot> and citation trail]**
 Foundational lindy-hop haptics: blindfolded followers decode the move vocabulary from hand forces
 alone; swing modeled as a finite state machine. Formalizes the *signal* through the hands, not the
-grasp — the connection is a force channel of given impedance. Direct kin to ZDL (dancer-scientist
-formalizing swing) and the clearest evidence that even formal dance science abstracted the grip away.
+grasp — the connection is a force channel of given impedance. Direct kin to Maril's project
+(dancer-scientist formalizing swing) and the clearest evidence that even formal dance science
+abstracted the grip away.
 
 **Joseph Daniel DeMers — "Frame matching and ΔPTED," *Research in Dance Education* 14(1):71–80,
 2013.** <https://www.tandfonline.com/doi/abs/10.1080/14647893.2012.688943>;
@@ -177,7 +182,7 @@ when forces are lowest.
 Books, ~2003).** <https://www.amazon.com/Hands-Fingers-Advanced-Labanotation-Hutchinson/dp/1852730862>
 **[unverified content; print book, listing confirmed]**
 The strongest candidate for a *formal* system that could encode grips: Labanotation has contact
-hooks, grasp symbols, and a whole volume on hand/finger notation. But I found no published
+hooks, grasp symbols, and a whole volume on hand/finger notation. But this survey found no published
 application of it to partner-dance handhold classification. General refs (Wikipedia "Labanotation,"
 Dance Notation Bureau <https://www.dancenotation.org/labanotation-fundamentals/>) confirm
 contact/grasp notation exists; nobody has used it to enumerate holds. This is the key open follow-up:
@@ -561,8 +566,8 @@ dance grip taxonomy.
 ## Dance itself stops at which-hand-holds-which
 
 The formal dance codifications — NDCA definitions, Laird / ISTD technique books, WDSF, competition
-rules — classify *which hand holds which* and *where the bodies are*. That is exactly the layer ZDL
-already mathematized as set partitions. They stop there. The grip mechanics, when they exist at all,
+rules — classify *which hand holds which* and *where the bodies are*. That is exactly the layer
+Maril already mathematized as set partitions. They stop there. The grip mechanics, when they exist at all,
 live in three places: (1) scattered, unnamed single-grip specs in pedagogy — the WCS/lindy two-finger
 "hook" with thumb up and free pinky, described independently at west-coast-swing.net and
 lurklurk.org, both noticing its anisotropic stiffness (stiff in pull/push, free in rotation); (2)
@@ -638,7 +643,7 @@ Sport gets nearest, from several directions at once, and no single source closes
 ### Verdict
 
 **No prior work classifies mutual hand-hand grasps.** Dance codifications stop at the set-partition
-level ZDL already covered. Robotics classifies one hand on a passive object and breaks on all four
+level Maril's classification already covered. Robotics classifies one hand on a passive object and breaks on all four
 counts for hand-on-hand. Haptics measures forces through the grip and never its shape. Sport gets
 closest but no source is a general taxonomy: acroyoga has the *forms*, grappling has the *clasp
 descriptors*, judo has the *coding methodology*, arm wrestling has one *codified mutual grip*, and
@@ -650,8 +655,8 @@ releasable, and rotatable in the middle of a turn.
 
 # Taxonomy sketch
 
-**This is a sketch, not a model.** Sibling threads build the formal object; this section proposes the
-axes and shows they can code real holds, so the formal work has somewhere to start. The move is to
+**This is a sketch, not a model.** Building the formal object is left to companion work; this section
+proposes the axes and shows they can code real holds, so the formal work has somewhere to start. The move is to
 take Feix's dimensions — power/precision, opposition type, virtual fingers, thumb position — and do
 two things the object literature never had to: make each dimension *per-hand* (a grip can be power on
 one side and precision on the other), and add the *mutual* axes (role symmetry, interlock, reciprocal
@@ -726,4 +731,5 @@ contact-area measurement to pin down.
 
 The honest summary: the pieces exist, scattered across four fields that never talked to each other.
 Assembling them into a taxonomy of mutual hand-hand grasps — per-hand Feix dimensions, plus role
-symmetry, interlock, and a compliance regime nobody else needed — is open work, and it's ours to do.
+symmetry, interlock, and a compliance regime nobody else needed — is open work, and no one has done
+it yet.
