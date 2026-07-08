@@ -85,6 +85,30 @@ See HANDOFF.md (on the `knot-models` branch) for the full API. Highlights:
   exponent-sum / invariant mismatch) and for positives found by bounded
   rewriting search; otherwise it answers `"unknown"`.
 
+## Future extensions
+
+Two avenues the current scope deliberately excludes; both should survive
+into later phases' planning:
+
+1. **Joint-limits / configuration-space feasibility filter.** Topological
+   equivalence says which positions are *reachable without breaking grips*,
+   not which are *comfortable or anatomically possible*. A future layer
+   should filter enumerated entanglement classes by a kinematic feasibility
+   model (shoulder/elbow/wrist ranges, arm lengths, torso clearance) — the
+   knot-theoretic analogue of the blog post's impossible/weird/feasible
+   census, replacing the hand-coded feasibility rules with a configuration-
+   space check.
+2. **Whole-body orientation.** Dancers can face each other, face away, stand
+   side-to-side, etc. Within a single position the shoulders are fixed rel
+   boundary, but there is a discrete orientation state — the relative facing
+   of the two torsos — that the model should eventually be parameterized by.
+   Concretely: tangle boundary points living on rotatable frames (one frame
+   per torso, gluing patterns indexed by the frames' relative orientation),
+   or an orientation-state layer composed with braid moves for transitions
+   (a move can rotate a torso as well as braid the arms). Neither the
+   partition model nor the phase-1 core distinguishes closed-position from
+   shadow-position variants of the same grip; this extension is what would.
+
 ## Section stubs
 
 ### Tangle formalism for positions (phase 2)
