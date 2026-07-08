@@ -1,0 +1,19 @@
+{
+  "name": "grip-tangles",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Grips between two hands modeled as mini-tangles: 5 finger strands per hand anchored on rigid palm bars, with a Gauss-code-with-walls encoding, Reidemeister-style moves rel the bars, sound invariants, and an enumerator of grip classes under a finger-length feasibility bound.",
+  "type": "module",
+  "scripts": {
+    "test": "node src/test.ts",
+    "report": "node src/report.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "typescript": "^5.9.0"
+  }
+}
