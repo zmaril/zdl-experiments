@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entangled Holds — knot-theoretic dance positions</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='13'%3E%26%238859;%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar">
+        <header>
+          <h1>Entangled Holds</h1>
+          <p class="sub">
+            Knot-theoretic refinement of the hand-partition dance census from
+            <a href="https://www.zacksdancelab.com/blog/a-new-kind-of-dance-science" target="_blank" rel="noopener">Maril's &ldquo;A New Kind of Dance Science&rdquo;</a>.
+            Arms are tangle strands, torsos are obstacle bars, grips fuse hand endpoints.
+          </p>
+        </header>
+        <label class="field">
+          <span>Position</span>
+          <select id="position-select"></select>
+        </label>
+        <label class="field">
+          <span>Entanglement variant (over/under choices)</span>
+          <select id="variant-select"></select>
+        </label>
+        <div id="info-panel"></div>
+        <footer>
+          <p>
+            Drag to orbit, scroll to zoom. Over/under crossings in the 3D tubes
+            and the gaps in the 2D diagram both come from the same braid-word
+            data. Invariants are computed live in the browser with exact
+            (bigint) arithmetic.
+          </p>
+        </footer>
+      </aside>
+      <main id="views">
+        <section id="view3d" class="viewbox">
+          <div class="viewlabel">3D — facing stance, torso bars as obstacles</div>
+          <div id="canvas-host"></div>
+        </section>
+        <section id="view2d" class="viewbox">
+          <div class="viewlabel">2D — tangle diagram (braid-style, shoulders at bottom)</div>
+          <div id="svg-host"></div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

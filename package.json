@@ -5,11 +5,16 @@
   "type": "module",
   "main": "dist/core/index.js",
   "types": "dist/core/index.d.ts",
+  "workspaces": [
+    "web"
+  ],
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
-    "enumerate": "npm run build && node dist/enumerate/run.js",
-    "build": "tsc -p tsconfig.json",
+    "enumerate": "npm run build:lib && node dist/enumerate/run.js",
+    "build:lib": "tsc -p tsconfig.json",
+    "build": "npm run build:lib && npm run build --workspace web",
+    "dev": "npm run dev --workspace web",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "repository": {

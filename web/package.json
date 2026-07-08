@@ -1,0 +1,21 @@
+{
+  "name": "zdl-experiments-web",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Interactive visualization of knot-theoretic dance positions: 3D dancers with topologically faithful arm tubes plus a 2D tangle-diagram view.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "typescript": "^6.0.3",
+    "vite": "^7.1.0"
+  }
+}
