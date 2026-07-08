@@ -1,5 +1,5 @@
 {
-  "name": "@zdl/hands-kinematics",
+  "name": "hands-kinematics",
   "version": "0.1.0",
   "private": true,
   "description": "Functional classification of two-dancer grips as kinematic pairs: per-axis relative-motion states, force-transmission channels, and closure regimes; enumerate the abstract grip space, filter to mechanical consistency, and derive a grips-by-moves compatibility matrix.",

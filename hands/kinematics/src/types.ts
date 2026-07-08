@@ -2,8 +2,8 @@
  * Functional grip model: what a grip lets two dancers DO, not what it looks like.
  *
  * A grip is modeled as a kinematic pair (mechanism-theory sense) between the
- * two hands/forearms. We deliberately avoid full SE(3) machinery and instead
- * give each relative-motion axis a ternary state, plus explicit force channels
+ * two hands/forearms. Full SE(3) machinery is deliberately avoided; instead
+ * each relative-motion axis gets a ternary state, plus explicit force channels
  * and a closure regime (robotics grasp analysis: form vs force closure).
  *
  * Frame convention (grip-local, idealized):

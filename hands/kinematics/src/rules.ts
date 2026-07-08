@@ -88,7 +88,7 @@ export const RULES: Rule[] = [
       "alone maintains the grip, that geometry must geometrically block at " +
       "least one relative motion. Closure = form implies at least one locked " +
       "axis. (Caveat, documented in NOTES.md: one-directional cages like two " +
-      "interlocked finger-rings are blocked in only half of an axis; our " +
+      "interlocked finger-rings are blocked in only half of an axis; the " +
       "ternary axes cannot express that, so such grips classify as force " +
       "closure here.)",
     holds(s) {

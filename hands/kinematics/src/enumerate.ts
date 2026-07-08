@@ -85,7 +85,7 @@ export function enumerate(): EnumerationResult {
 
 /**
  * Interesting empty cells: states that pass the consistency filter, that no
- * cataloged grip occupies, and that we can name — theoretically buildable
+ * cataloged grip occupies, and that admit a name — theoretically buildable
  * grips nobody dances with. Each is verified consistent-and-unoccupied by
  * the test suite.
  */

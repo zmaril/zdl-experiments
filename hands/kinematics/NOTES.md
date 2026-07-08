@@ -1,10 +1,12 @@
 # Grips as Machines: a functional classification of the hands
 
-The set-partition model answered *which hands are connected* (B(4) = 15 holds,
-157 with hammerlocks). This experiment asks the next question down, at the
-scale of the hands themselves: **what does each grip let you DO?**
+Maril's set-partition model (the ZDL blog post,
+zacksdancelab.com/blog/a-new-kind-of-dance-science) answers *which hands are
+connected*: B(4) = 15 basic holds, 157 with hammerlocks. This experiment asks
+the next question down, at the scale of the hands themselves: **what does each
+grip let the dancers DO?**
 
-The bet: a grip is a machine. Specifically, it's a *kinematic pair* — the same
+The working hypothesis: a grip is a machine. Specifically, it's a *kinematic pair* — the same
 object mechanism theory uses to classify joints. A door hinge is a revolute
 pair, a piston in a cylinder is a cylindrical pair, a ball-and-socket is a
 spherical pair. An underarm turn works only because the grip swivels; a firm
@@ -36,8 +38,8 @@ and **lateral** is the third axis. Then:
 
 ## Enumerate, then filter
 
-Same move as the hammerlock census: write down the whole abstract space, then
-throw out what physics forbids.
+The same enumerate-then-filter move as Maril's hammerlock census: write down
+the whole abstract space, then throw out what physics forbids.
 
 - **Raw combinations: 46,656** (3⁵ motion × 2⁵ forces × 3 closures × 2 releases).
 - **Mechanically consistent: 2,195** after eight explicit rules
@@ -69,7 +71,7 @@ throw out what physics forbids.
 | Wrist hold | cylindrical pair (collar on shaft) | control the arm, not the hand |
 | Forearm/double-wrist | two collars, mutually caged | the handshake you can't fumble |
 
-Fun structural fact the model surfaced: **wrist hold and forearm hold are the
+A structural fact the model surfaces: **wrist hold and forearm hold are the
 same machine** — identical motion states, identical force channels — differing
 *only* in release mode. The functional difference every dancer feels (one is
 escapable, one is a negotiation) lives entirely in that one coordinate.
@@ -112,8 +114,8 @@ Headlines:
    the **hinge grip** (free about vertical, welded elsewhere — underarm turns
    on rails; hands can't build it, a swivel-bearing grip aid could); the
    **trombone grip** (a prismatic pair — rotationally welded, slides freely;
-   dance never uses it because we lead distance through exactly the pull/push
-   channel it deletes); the **torque-only clamp** (steer your partner's wrist
+   dance never uses it because partner dancing leads distance changes through
+   exactly the pull/push channel it deletes); the **torque-only clamp** (steer your partner's wrist
    orientation but never move them through space — leading pure shape, not
    travel). Whether these are undiscovered vocabulary or correctly rejected
    junk is exactly the kind of question this method is for.
@@ -132,7 +134,8 @@ Headlines:
   because the wrist gives. This model isolates the clasp itself.
 - **Direction-blind axes.** Each axis is symmetric, but real constraints are
   often one-sided: two interlocked finger-rings block pulling apart yet allow
-  pushing together. Our ternary can't say "locked one way, free the other" —
+  pushing together. The ternary states cannot express "locked one way, free
+  the other" —
   tension/compression flags recover this for the axial line only. This is why
   the hook grip files as force closure here despite its geometric flavor.
 - **Release is really a spectrum of effort and asymmetry** (the wrist-holder
@@ -141,9 +144,9 @@ Headlines:
 
 ## Hook for the braid/dynamics layer
 
-The sibling session (branch `knot-models`) models positions as tangles and
-moves as braid words — *where the arms go in space*. This layer is the gate in
-front of it: **a move sequence is executable only if every grip along the way
+The knot-theoretic layer of this repository (branch `knot-models`) models
+positions as tangles and moves as braid words — *where the arms go in space*.
+This layer is the gate in front of it: **a move sequence is executable only if every grip along the way
 permits the required rotations and forces.** A braid generator that turns the
 follower under the clasped hands needs `rotVert ≠ locked` and live tension at
 that clasp; a braid word containing it is dance-legal only for grips whose row
