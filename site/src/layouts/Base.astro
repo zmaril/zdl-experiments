@@ -1,0 +1,45 @@
+---
+import 'katex/dist/katex.min.css';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a class="wordmark" href={`${base}/`}>zdl-experiments <span class="wordmark-sub">/ dance science notes</span></a>
+        <div class="nav-links">
+          <a href={`${base}/`}>Experiments</a>
+          <a href={`${base}/about/`}>About</a>
+          <a href="https://github.com/zmaril/zdl-experiments" rel="external">Source</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>
+        Research notes on the mathematics of partner dance. Source and data:
+        <a href="https://github.com/zmaril/zdl-experiments">zmaril/zdl-experiments</a>.
+        Related work: <a href="https://www.zacksdancelab.com">Zack's Dance Lab</a>.
+      </p>
+    </footer>
+  </body>
+</html>

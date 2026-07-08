@@ -1,0 +1,199 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import {
+  getExperiments,
+  listDataFiles,
+  listImages,
+  loadResultTable,
+  REPO_ROOT,
+  REPO_URL,
+  type Experiment,
+} from '../../lib/experiments';
+import path from 'node:path';
+
+export async function getStaticPaths() {
+  const experiments = await getExperiments();
+  return experiments.map((experiment) => ({
+    params: { id: experiment.id },
+    props: { experiment },
+  }));
+}
+
+interface Props {
+  experiment: Experiment;
+}
+
+const { experiment } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+let Content: any = null;
+let headings: { depth: number; slug: string; text: string }[] = [];
+let tables: NonNullable<ReturnType<typeof loadResultTable>>[] = [];
+let figures: { src: string; name: string }[] = [];
+
+if (experiment.kind === 'notes') {
+  const rendered = await render(experiment.entry);
+  Content = rendered.Content;
+  headings = (rendered.headings ?? []).filter(
+    (h) => h.depth >= 2 && h.depth <= 3,
+  );
+  // Results alongside the NOTES.md: CSV/JSON as tables, images as figures.
+  const dirRel = path
+    .relative(REPO_ROOT, experiment.dir)
+    .split(path.sep)
+    .join('/');
+  tables = listDataFiles(experiment.dir)
+    .map((f) => loadResultTable(experiment.dir, f))
+    .filter((t) => t !== null);
+  figures = listImages(experiment.dir).map((name) => ({
+    name,
+    src: `${base}/experiment-assets/${dirRel ? `${dirRel}/` : ''}${name}`,
+  }));
+}
+
+const isKnotModels = experiment.id === 'knot-models';
+---
+
+<Base title={`${experiment.title} — zdl-experiments`} description={experiment.summary}>
+  <article>
+    <header class="experiment-header">
+      <h1>{experiment.title}</h1>
+      <div class="card-meta">
+        <span class={`status status-${experiment.status.replace(' ', '-')}`}>
+          {experiment.status}
+        </span>
+        {
+          experiment.branch && (
+            <a
+              class="branch-tag"
+              href={`${REPO_URL}/tree/${experiment.branch}`}
+            >
+              branch: {experiment.branch}
+            </a>
+          )
+        }
+      </div>
+    </header>
+
+    {
+      experiment.kind === 'stub' ? (
+        <div class="stub-note">
+          <p>
+            <strong>This experiment is in flight.</strong> {experiment.summary}
+          </p>
+          <p>
+            The working notes live on the
+            <a href={`${REPO_URL}/tree/${experiment.branch}`}>
+              <code>{experiment.branch}</code>
+            </a>
+            branch and will appear here automatically when that branch merges —
+            the site picks up any <code>NOTES.md</code> it finds in the repo at
+            build time.
+          </p>
+        </div>
+      ) : (
+        <>
+          {headings.length > 1 && (
+            <nav class="section-nav" aria-label="Sections">
+              <strong>On this page</strong>
+              <ol>
+                {headings.map((h) => (
+                  <li class={`depth-${h.depth}`}>
+                    <a href={`#${h.slug}`}>{h.text}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
+          <div class="notes-body">
+            <Content />
+          </div>
+          {tables.length > 0 && (
+            <section>
+              <h2 id="results-data">Results data</h2>
+              {tables.map((t) => (
+                <div class="result-table">
+                  <h3>
+                    <code>{t.file}</code>
+                  </h3>
+                  {t.raw ? (
+                    <pre>{t.raw}</pre>
+                  ) : (
+                    <div class="table-scroll">
+                      <table>
+                        <thead>
+                          <tr>
+                            {t.columns.map((c) => (
+                              <th>{c}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {t.rows.map((row) => (
+                            <tr>
+                              {row.map((cell) => (
+                                <td>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
+                  {t.truncated && <p class="branch-tag">…truncated preview.</p>}
+                </div>
+              ))}
+            </section>
+          )}
+          {figures.length > 0 && (
+            <section>
+              <h2 id="figures">Figures</h2>
+              <div class="figures">
+                {figures.map((f) => (
+                  <figure>
+                    <a href={f.src}>
+                      <img src={f.src} alt={f.name} loading="lazy" />
+                    </a>
+                    <figcaption>{f.name}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            </section>
+          )}
+        </>
+      )
+    }
+
+    {
+      isKnotModels && (
+        <section>
+          <h2 id="viewer">Interactive viewer</h2>
+          {/*
+            VIEWER SLOT — documented placeholder.
+
+            The knot-models branch is building a three.js viewer (under web/
+            in the repo). Once that branch merges and the viewer has a build,
+            embed it here either as:
+
+              1. an <iframe src=".../viewer/"> pointing at the viewer's own
+                 built output (copy it into site/public/viewer/ at build time
+                 or deploy it alongside), or
+              2. an Astro island: add the viewer as a component and hydrate
+                 with client:only (three.js needs the browser).
+
+            Keep the section id="viewer" so existing links keep working.
+            See also site/README.md, "Embedding the knot-models viewer".
+          */}
+          <div class="viewer-slot">
+            <p>
+              An interactive three.js viewer for these tangles is being built
+              on the <a href={`${REPO_URL}/tree/knot-models`}>knot-models</a>
+              branch. It will be embedded here once it lands.
+            </p>
+          </div>
+        </section>
+      )
+    }
+  </article>
+</Base>

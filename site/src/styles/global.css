@@ -1,0 +1,382 @@
+/* Zack's Dance Lab — experiments site.
+   Clean, readable, math-friendly. One accent color, generous measure,
+   light/dark via prefers-color-scheme. */
+
+:root {
+  --bg: #fdfcfa;
+  --fg: #23211e;
+  --muted: #6d675e;
+  --accent: #a03232;
+  --accent-soft: #a0323218;
+  --border: #e4e0d8;
+  --card-bg: #ffffff;
+  --code-bg: #f4f2ee;
+  --max-width: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161513;
+    --fg: #eae7e1;
+    --muted: #a29b8f;
+    --accent: #e07a7a;
+    --accent-soft: #e07a7a22;
+    --border: #33302b;
+    --card-bg: #1e1c1a;
+    --code-bg: #24221f;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, Georgia,
+    serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+/* Header / footer ---------------------------------------------------- */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--fg);
+  letter-spacing: 0.01em;
+}
+
+.wordmark-sub {
+  color: var(--accent);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.1rem;
+  font-size: 0.95rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/* Type --------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: ui-sans-serif, system-ui, 'Segoe UI', Helvetica, Arial,
+    sans-serif;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2.25rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-top: 1.75rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.lede {
+  font-size: 1.15rem;
+  color: var(--muted);
+  margin-top: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* Code + math -------------------------------------------------------- */
+
+code,
+pre {
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas,
+    monospace;
+  font-size: 0.9em;
+}
+
+:not(pre) > code {
+  background: var(--code-bg);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+
+pre {
+  background: var(--code-bg) !important;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+/* Cards -------------------------------------------------------------- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 1.5rem 0;
+  list-style: none;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card-bg);
+  padding: 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.card h2 a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.card h2 a:hover {
+  color: var(--accent);
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  flex: 1;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+}
+
+.status {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.status-in-progress {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.status-complete {
+  background: #2e7d3222;
+  color: #2e7d32;
+}
+
+@media (prefers-color-scheme: dark) {
+  .status-complete {
+    background: #81c78422;
+    color: #81c784;
+  }
+}
+
+.branch-tag {
+  color: var(--muted);
+  font-family: ui-monospace, monospace;
+  font-size: 0.75rem;
+}
+
+/* Experiment pages ---------------------------------------------------- */
+
+.experiment-header {
+  margin-bottom: 1.5rem;
+}
+
+.experiment-header .card-meta {
+  margin-top: 0.5rem;
+}
+
+.section-nav {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card-bg);
+  padding: 0.9rem 1.2rem;
+  margin: 1.5rem 0 2rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+
+.section-nav strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.section-nav ol {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.section-nav li {
+  margin: 0.15rem 0;
+}
+
+.section-nav .depth-3 {
+  list-style: circle;
+  margin-left: 1rem;
+}
+
+.notes-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.notes-body table,
+.result-table table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.table-scroll {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.notes-body th,
+.notes-body td,
+.result-table th,
+.result-table td {
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.6rem;
+  text-align: left;
+}
+
+.notes-body th,
+.result-table th {
+  background: var(--code-bg);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.8rem;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+.figures figure {
+  margin: 0;
+}
+
+.figures figcaption {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-family: ui-monospace, monospace;
+}
+
+.stub-note,
+.viewer-slot {
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  background: var(--card-bg);
+  padding: 1.25rem 1.5rem;
+  color: var(--muted);
+}
+
+.viewer-slot {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}

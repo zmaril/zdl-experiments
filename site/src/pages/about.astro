@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="About — zdl-experiments"
+  description="What this site is: auto-published research notes from the zdl-experiments repository on the mathematics of partner dance."
+>
+  <h1>About</h1>
+  <p class="lede">
+    This site publishes the working notes of the
+    <a href="https://github.com/zmaril/zdl-experiments">zdl-experiments</a>
+    repository — a collection of research threads on the mathematics of
+    partner dance.
+  </p>
+  <p>
+    The program builds on prior work at
+    <a href="https://www.zacksdancelab.com">Zack's Dance Lab</a>, in particular
+    Maril's
+    <a href="https://www.zacksdancelab.com/blog/a-new-kind-of-dance-science"
+      >“A New Kind of Dance Science”</a
+    >, which counts two-dancer hand connections via set partitions: B(4) = 15
+    partition classes, extended by per-arm hammerlock states to 240 candidates
+    and filtered to 157 physically feasible positions. That result treats a
+    connection as pure combinatorics; the experiments here probe what it leaves
+    out — the topology of crossed and wrapped arms (knot theory), the anatomy
+    of the grips themselves (contact regions, taxonomies), what a grip permits
+    mechanically (kinematics), and whether the models survive contact with
+    photographs of real dancers (pose estimation).
+  </p>
+  <p>
+    The notes are honest working documents, not finished publications:
+    conjectures, half-built code, and negative results stay in. Each research
+    thread keeps a <code>NOTES.md</code> in its directory of the repository,
+    and this site is rebuilt from whatever notes exist — see the
+    <a href="https://github.com/zmaril/zdl-experiments/tree/master/site"
+      >site README</a
+    > for the publishing convention.
+  </p>
+  <p>
+    Errors in the math, uncataloged grips, and other corrections are welcome as
+    issues on
+    <a href="https://github.com/zmaril/zdl-experiments/issues">GitHub</a>.
+  </p>
+</Base>

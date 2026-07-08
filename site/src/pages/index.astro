@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import { getExperiments } from '../lib/experiments';
+
+const experiments = await getExperiments();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<Base
+  title="zdl-experiments — dance science notes"
+  description="Research notes on the mathematics of partner dance: combinatorics, knot theory, and kinematics of grips, connections, and positions."
+>
+  <h1>Experiments</h1>
+  <p class="lede">
+    Research notes on the mathematics of partner dance: how grips, connections,
+    and positions can be counted, classified, and compared.
+  </p>
+  <p>
+    The starting point is Maril's
+    <a href="https://www.zacksdancelab.com/blog/a-new-kind-of-dance-science"
+      >“A New Kind of Dance Science”</a
+    >, which models two dancers' hand connections as set partitions of the four
+    hands — Bell number B(4) = 15 partition classes, extended by hammerlock
+    states and filtered for physical feasibility to 157 usable positions. The
+    threads below each extend that model along one axis: the topology of how
+    arms entangle in space, the anatomy and combinatorics of the grips
+    themselves, their kinematics, and empirical checks against photographs of
+    real grips. Each experiment publishes its raw working notes here as it
+    goes — conjectures, code, and negative results included.
+  </p>
+
+  <ul class="card-grid">
+    {
+      experiments.map((exp) => (
+        <li class="card">
+          <h2>
+            <a href={`${base}/experiments/${exp.id}/`}>{exp.title}</a>
+          </h2>
+          <p>{exp.summary}</p>
+          <div class="card-meta">
+            <span class={`status status-${exp.status.replace(' ', '-')}`}>
+              {exp.status}
+            </span>
+            {exp.kind === 'stub' && (
+              <span class="branch-tag">on branch {exp.branch}</span>
+            )}
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</Base>
