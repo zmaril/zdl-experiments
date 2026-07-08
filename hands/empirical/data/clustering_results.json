@@ -1,0 +1,172 @@
+{
+ "n_images_clustered": 13,
+ "feature_names": [
+  "palm_palm_dist",
+  "min_tip_tip",
+  "mean_tip_tip",
+  "tips1_to_palm2",
+  "tips2_to_palm1",
+  "curl_thumb",
+  "curl_index",
+  "curl_middle",
+  "curl_ring",
+  "curl_pinky"
+ ],
+ "images": [
+  "img006",
+  "img014",
+  "img017",
+  "img021",
+  "img029",
+  "img045",
+  "img067",
+  "img073",
+  "img075",
+  "img077",
+  "img096",
+  "img112",
+  "img125"
+ ],
+ "grip_labels": [
+  "handshake",
+  "hand_clasp",
+  "hand_clasp",
+  "hand_on_top",
+  "fingertip_hold",
+  "hand_clasp",
+  "hook_grip",
+  "hook_grip",
+  "hook_grip",
+  "hook_grip",
+  "wrist_grip",
+  "handshake",
+  "palm_press"
+ ],
+ "grip_capture_audit": [
+  "both_hands_good",
+  "one_hand_only",
+  "one_hand_only",
+  "both_hands_good",
+  "both_hands_good",
+  "chimera",
+  "chimera",
+  "wrong_hands",
+  "both_hands_good",
+  "one_hand_only",
+  "one_hand_only",
+  "one_hand_only",
+  "both_hands_good"
+ ],
+ "kmeans": {
+  "k=2": {
+   "ari_vs_labels": 0.075,
+   "clusters": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    1
+   ]
+  },
+  "k=3": {
+   "ari_vs_labels": -0.041,
+   "clusters": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    2,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "k=4": {
+   "ari_vs_labels": 0.165,
+   "clusters": [
+    0,
+    2,
+    2,
+    0,
+    3,
+    2,
+    3,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0
+   ]
+  }
+ },
+ "ward": {
+  "k=2": {
+   "ari_vs_labels": -0.049,
+   "clusters": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "k=3": {
+   "ari_vs_labels": -0.041,
+   "clusters": [
+    2,
+    2,
+    2,
+    2,
+    1,
+    2,
+    1,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2
+   ]
+  },
+  "k=4": {
+   "ari_vs_labels": 0.165,
+   "clusters": [
+    3,
+    2,
+    2,
+    3,
+    1,
+    2,
+    1,
+    4,
+    3,
+    3,
+    2,
+    3,
+    3
+   ]
+  }
+ }
+}
