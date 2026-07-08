@@ -1,12 +1,16 @@
-# HANDOFF — Phase 1 (knot math core) → Phases 2 and 3
+# HANDOFF — Phases 1 + 2 (knot math core, dance model, census) → Phase 3
 
-Branch `knot-models` contains the complete phase-1 deliverable: a
-dependency-free TypeScript knot-theory core in `src/core`, 87 passing tests
+Branch `knot-models` contains the complete phase-1 and phase-2
+deliverables: a dependency-free TypeScript knot-theory core in `src/core`,
+the dance→formalism model in `src/model`, the census/enumeration layer in
+`src/enumerate` (entry: `npm run enumerate`), 128 passing tests
 (`npm test`), building with plain `tsc` (`npm run build` / `npm run
 typecheck`). `master` has the scaffold only. See NOTES.md for project
-framing and the npm survey (conclusion: nothing usable exists; everything
-here is written from scratch, MIT, no vendored code — KnotFolio is GPL and
-was consulted for ideas only).
+framing, the census reconstruction (all six blog counts reproduced;
+"impossible" rule documented as a guess), the refinement findings, and the
+npm survey (conclusion: nothing usable exists; everything here is written
+from scratch, MIT, no vendored code — KnotFolio is GPL and was consulted
+for ideas only).
 
 ## What exists
 
@@ -19,9 +23,18 @@ src/core/
   braid.ts         braid words, word problem (bounded), braid closure
   tangle.ts        labeled-boundary tangles: compose, close, reverse strand
   index.ts         re-exports everything
-src/model/         phase 2 stub (dance -> formalism mapping)
-src/enumerate/     phase 2 stub (position/entanglement enumeration)
+src/model/
+  partitions.ts    the 15 hand partitions (Bell enumeration + names)
+  census.ts        240 candidates -> 6 categories, 157 feasible (blog counts)
+  tangles.ts       census cell -> tangle: torso bars, chains, hammerlock wraps
+  positions.ts     named positions (open, handshake, crossed, hammerlock, cuddle)
+  moves.ts         moves as braid words on the four arms + word-problem helpers
+src/enumerate/
+  invariants.ts    fingerprints: linking sums + Jones of canonical closure
+  refine.ts        per-cell/per-partition refinement, [lower, upper] brackets
+  run.ts           npm run enumerate: summary + results/enumeration.json
 web/               phase 3 (empty, .gitkeep)
+results/enumeration.json   full machine-readable census + refinement table
 ```
 
 Tests are colocated (`src/core/*.test.ts`, vitest) and double as usage
@@ -146,33 +159,90 @@ closeTangle(t, pairs: [labelA,labelB][]): Diagram;
   Links are built directly or via braids/tangles.
 - `Tangle` does not store a cyclic boundary order, so it cannot reject
   non-planar gluings; closures of non-planar gluings are virtual diagrams
-  and their "invariants" are not link invariants. Phase 2 must keep gluing
-  patterns planar (or add a boundary-order layer — a good early phase-2
-  hardening task).
+  and their "invariants" are not link invariants. Phase 2 keeps gluing
+  patterns planar by construction: positions are built braid-style with
+  caps consuming adjacent top ends, and closures pair boundary points
+  non-crossingly (chains close separately when nested, concatenated when
+  interleaved). Any new closure patterns must preserve this discipline.
 
-## What phase 2 should build (src/model + src/enumerate)
+## Phase-2 model API (what phase 3 renders from)
 
-- **Model layer**: arms as 4 strands with the 8 boundary labels (the smoke
-  test in `tangle.test.ts` sketches the naming), grips = out→in gluings
-  after `reverseStrand`, torsos as obstacle strands/components (a hammerlock
-  = arm strand wrapped relative to the torso strand — linking number against
-  the torso component detects it). Map the blog post's 15 partitions × 2^4
-  hammerlock states to tangle constructions; moves as braid words
-  (`tangleFromBraid` + `composeTangles` stack like word concatenation).
-- **Enumerate layer**: generate candidate positions, close them
-  (`closeTangle`), classify with `linkingNumber` / `jonesPolynomial` /
-  `simplify`, reconcile counts against the 157-state census.
-- Keep NOTES.md's **Future extensions** section alive in whatever the final
-  NOTES.md becomes — especially (1) the joint-limits/config-space
-  feasibility filter and (2) whole-body orientation (relative torso facing
-  as a discrete state the tangle boundary frames / move layer are
-  parameterized by). Phase 2's data model should at least not preclude
-  either.
+Everything below re-exports through `src/model/index.ts` and
+`src/enumerate/index.ts`.
+
+```ts
+// partitions.ts
+ALL_PARTITIONS: PartitionInfo[]            // the 15, with ids + dance names
+partitionById(id)                          // e.g. 'LL.FR|LR.FL'
+// census.ts
+allCandidateStates(): CandidateState[]     // 240, each with .category
+censusCounts()                             // 23/45/15/70/56/31, feasible 157
+feasibleStates()                           // the 157
+// tangles.ts  — the viz-facing construction
+planPosition({partition, hammerlocks})     // -> {ok, plan} | {ok:false, reason}
+variantSpace(plan) / lockedVariants(plan)  // over/under + twist choices
+buildPositionTangle(plan, variant): BuiltPosition
+closePosition(built): Diagram              // canonical closure for invariants
+stringLinkingSums(built)                   // chain/torso linking data
+// positions.ts
+NAMED_POSITIONS / buildNamedPosition(id)   // 'open-two-hand', 'handshake',
+                                           // 'crossed-two-hand',
+                                           // 'hammerlock-follower',
+                                           // 'cuddle-sweetheart', ...
+// moves.ts
+MOVES / movesBraid(ids) / sequenceUnwinds(ids) / sequencesEqual(a, b)
+// enumerate
+fingerprint(built) / fingerprintKey(fp)
+refineAll(): { summary, cells }            // the whole census table
+```
+
+**`BuiltPosition` is the render contract.** It contains everything a
+drawing needs, in braid-grid form:
+
+- `plan.strands` — bottom boundary order, e.g. `['LT','LR','FL','FT']`
+  (torso bars at the outside; only gripped arms carry strands);
+- `word` — braid letters bottom-to-top (core convention: letter ±i crosses
+  the strands at positions i−1, i; positive = left strand in front), which
+  gives every crossing's position AND over/under directly;
+- `plan.chains` — which hand pairs are fused at the top (draw a grip cap
+  joining the two strand tops), plus each chain's `zone`
+  (front / behindLeader / behindFollower) for placing the grip point;
+- `plan.geometricHammerlocks` — free hammerlocked hands (no strand; draw
+  the arm posed behind the back, no topology);
+- `closurePairs` — how arms/torsos close up when the invariant view wants
+  full loops;
+- `tangle` — the underlying labeled-boundary tangle if the viz prefers
+  PD-style layout (`toPDCode` + `faces()` in core).
+
+So: **given a position id** (a named position, or any census cell via
+`planPosition` + a variant), **the model returns strand geometry**: strand
+order, crossing list with over/under, grip caps, torso bars. A strand-grid
+drawing (x = strand position, y = word index) is enough; no planar
+embedding solver needed.
 
 ## What phase 3 should build (web/)
 
 - Vite app under `web/` (deliberately not scaffolded; nothing in the root
-  tsconfig/package.json blocks a nested Vite project). Render diagrams from
-  the core types — `toPDCode` + `faces()` give enough combinatorics for a
-  planar layout; braid tangles have an obvious strand-grid drawing. Phase 3
-  opens the PR.
+  tsconfig/package.json blocks a nested Vite project). Phase 3 opens the PR.
+- Two stylized facing dancers; torso bars drawn as the bodies; arm tubes
+  following the braid-grid strand paths with over/under gaps at crossings
+  (sign of the braid letter = which tube is in front).
+- Position picker: the 15 partitions (`ALL_PARTITIONS`), then hammerlock
+  states (`feasibleStates()` filtered by partition), then entanglement
+  variants (`lockedVariants`) — mirroring the census → refinement drill-down
+  in `results/enumeration.json`. Named positions as presets.
+- Flag rather than draw the out-of-frame cells: multi-grip (3+/4-hand
+  grips) and back-to-back double hammerlocks (`planPosition` returns the
+  reason).
+- Optional: move player — apply a move word (`MOVES`), animate the braid
+  concatenation, show `sequenceUnwinds` verdicts.
+
+## Notes for later phases
+
+- Keep NOTES.md's **Future extensions** section alive — especially (1) the
+  joint-limits/config-space feasibility filter and (2) whole-body
+  orientation. Phase 2 sharpened both: the 30 back-to-back cells and the
+  cuddle-vs-double-hammerlock ambiguity are exactly orientation states.
+- The census "impossible" rule is a documented reconstruction
+  (`src/model/census.ts`); if the blog's actual classifier ever surfaces,
+  reconcile there and re-pin the tests.
