@@ -46,8 +46,8 @@ Two modeling decisions, argued rather than assumed:
   as a per-hand precondition (a hand must be *able* to curl to make a hook) than
   as a contact pair. So the pair set is cross-hand only, A-to-B. Named grips
   that *rely* on self-contact for their shape (hook, fist-like holds) still
-  appear — we model the inter-hand contacts they produce, and note the posture
-  in prose.
+  appear — the model captures the inter-hand contacts they produce, with the
+  posture noted in prose.
 
 - **Empty set excluded from counts.** The empty contact set is exactly Maril's
   "not connected" state — it is the one bit his model already had. Since the
