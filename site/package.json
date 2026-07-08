@@ -1,7 +1,7 @@
 {
   "name": "zdl-experiments-site",
   "version": "0.1.0",
-  "description": "Static site for Zack's Dance Lab experiments. Globs the repo for */NOTES.md at build time and renders each as an experiment page.",
+  "description": "Static site publishing the dance-connection research notes in this repo. Globs the repo for */NOTES.md at build time and renders each as an experiment page.",
   "private": true,
   "type": "module",
   "scripts": {

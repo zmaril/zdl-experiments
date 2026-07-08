@@ -3,7 +3,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import { rehypeExperimentAssets } from './src/plugins/rehype-experiment-assets';
 
-// Static site for Zack's Dance Lab experiments.
+// Static site publishing the dance-connection research notes in this repo.
 //
 // The site lives in site/ inside the zdl-experiments repo. At build time it
 // globs the *parent* repo for NOTES.md files (see src/content.config.ts) and
