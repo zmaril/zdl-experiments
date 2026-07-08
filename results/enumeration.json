@@ -1,0 +1,3538 @@
+{
+  "summary": {
+    "partitions": 15,
+    "candidates": 240,
+    "census": {
+      "impossible": 23,
+      "weird": 45,
+      "boring": 15,
+      "stable": 70,
+      "mixed": 56,
+      "transition": 31,
+      "feasible": 157
+    },
+    "refinedCells": 172,
+    "representableCells": 85,
+    "unrepresentable": {
+      "multiGrip": 57,
+      "backToBack": 30
+    },
+    "perPartition": [
+      {
+        "partitionId": "FL.FR",
+        "name": "follower holds own hands",
+        "gripSizes": [
+          2
+        ],
+        "cells": {
+          "impossible": 0,
+          "weird": 15,
+          "boring": 1,
+          "stable": 0,
+          "mixed": 0,
+          "transition": 0
+        },
+        "representableCells": 1,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 0
+        },
+        "classesLower": 1,
+        "classesUpper": 1,
+        "diagrams": 1
+      },
+      {
+        "partitionId": "LL.FL",
+        "name": "cross hold (left to left)",
+        "gripSizes": [
+          2
+        ],
+        "cells": {
+          "impossible": 0,
+          "weird": 0,
+          "boring": 1,
+          "stable": 3,
+          "mixed": 9,
+          "transition": 3
+        },
+        "representableCells": 12,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 4
+        },
+        "classesLower": 5,
+        "classesUpper": 5,
+        "diagrams": 20
+      },
+      {
+        "partitionId": "LL.FL.FR",
+        "name": "three-hand grip (leader L + both follower hands)",
+        "gripSizes": [
+          3
+        ],
+        "cells": {
+          "impossible": 4,
+          "weird": 0,
+          "boring": 1,
+          "stable": 5,
+          "mixed": 5,
+          "transition": 1
+        },
+        "representableCells": 0,
+        "unrepresentable": {
+          "multiGrip": 12,
+          "backToBack": 0
+        },
+        "classesLower": 0,
+        "classesUpper": 0,
+        "diagrams": 0
+      },
+      {
+        "partitionId": "LL.FL|LR.FR",
+        "name": "crossed two-hand hold",
+        "gripSizes": [
+          2,
+          2
+        ],
+        "cells": {
+          "impossible": 0,
+          "weird": 0,
+          "boring": 1,
+          "stable": 15,
+          "mixed": 0,
+          "transition": 0
+        },
+        "representableCells": 9,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 7
+        },
+        "classesLower": 66,
+        "classesUpper": 98,
+        "diagrams": 98
+      },
+      {
+        "partitionId": "LL.FR",
+        "name": "open single hold (leader L, follower R)",
+        "gripSizes": [
+          2
+        ],
+        "cells": {
+          "impossible": 0,
+          "weird": 0,
+          "boring": 1,
+          "stable": 3,
+          "mixed": 9,
+          "transition": 3
+        },
+        "representableCells": 12,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 4
+        },
+        "classesLower": 5,
+        "classesUpper": 5,
+        "diagrams": 20
+      },
+      {
+        "partitionId": "LL.FR|LR.FL",
+        "name": "open two-hand hold",
+        "gripSizes": [
+          2,
+          2
+        ],
+        "cells": {
+          "impossible": 0,
+          "weird": 0,
+          "boring": 1,
+          "stable": 15,
+          "mixed": 0,
+          "transition": 0
+        },
+        "representableCells": 9,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 7
+        },
+        "classesLower": 75,
+        "classesUpper": 99,
+        "diagrams": 99
+      },
+      {
+        "partitionId": "LL.LR",
+        "name": "leader holds own hands",
+        "gripSizes": [
+          2
+        ],
+        "cells": {
+          "impossible": 0,
+          "weird": 15,
+          "boring": 1,
+          "stable": 0,
+          "mixed": 0,
+          "transition": 0
+        },
+        "representableCells": 1,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 0
+        },
+        "classesLower": 1,
+        "classesUpper": 1,
+        "diagrams": 1
+      },
+      {
+        "partitionId": "LL.LR.FL",
+        "name": "three-hand grip (both leader hands + follower L)",
+        "gripSizes": [
+          3
+        ],
+        "cells": {
+          "impossible": 4,
+          "weird": 0,
+          "boring": 1,
+          "stable": 5,
+          "mixed": 5,
+          "transition": 1
+        },
+        "representableCells": 0,
+        "unrepresentable": {
+          "multiGrip": 12,
+          "backToBack": 0
+        },
+        "classesLower": 0,
+        "classesUpper": 0,
+        "diagrams": 0
+      },
+      {
+        "partitionId": "LL.LR.FL.FR",
+        "name": "four-hand grip",
+        "gripSizes": [
+          4
+        ],
+        "cells": {
+          "impossible": 7,
+          "weird": 0,
+          "boring": 1,
+          "stable": 8,
+          "mixed": 0,
+          "transition": 0
+        },
+        "representableCells": 0,
+        "unrepresentable": {
+          "multiGrip": 9,
+          "backToBack": 0
+        },
+        "classesLower": 0,
+        "classesUpper": 0,
+        "diagrams": 0
+      },
+      {
+        "partitionId": "LL.LR.FR",
+        "name": "three-hand grip (both leader hands + follower R)",
+        "gripSizes": [
+          3
+        ],
+        "cells": {
+          "impossible": 4,
+          "weird": 0,
+          "boring": 1,
+          "stable": 5,
+          "mixed": 5,
+          "transition": 1
+        },
+        "representableCells": 0,
+        "unrepresentable": {
+          "multiGrip": 12,
+          "backToBack": 0
+        },
+        "classesLower": 0,
+        "classesUpper": 0,
+        "diagrams": 0
+      },
+      {
+        "partitionId": "LL.LR|FL.FR",
+        "name": "each dancer holds own hands",
+        "gripSizes": [
+          2,
+          2
+        ],
+        "cells": {
+          "impossible": 0,
+          "weird": 15,
+          "boring": 1,
+          "stable": 0,
+          "mixed": 0,
+          "transition": 0
+        },
+        "representableCells": 1,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 0
+        },
+        "classesLower": 3,
+        "classesUpper": 3,
+        "diagrams": 3
+      },
+      {
+        "partitionId": "LR.FL",
+        "name": "open single hold (leader R, follower L)",
+        "gripSizes": [
+          2
+        ],
+        "cells": {
+          "impossible": 0,
+          "weird": 0,
+          "boring": 1,
+          "stable": 3,
+          "mixed": 9,
+          "transition": 3
+        },
+        "representableCells": 12,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 4
+        },
+        "classesLower": 5,
+        "classesUpper": 5,
+        "diagrams": 20
+      },
+      {
+        "partitionId": "LR.FL.FR",
+        "name": "three-hand grip (leader R + both follower hands)",
+        "gripSizes": [
+          3
+        ],
+        "cells": {
+          "impossible": 4,
+          "weird": 0,
+          "boring": 1,
+          "stable": 5,
+          "mixed": 5,
+          "transition": 1
+        },
+        "representableCells": 0,
+        "unrepresentable": {
+          "multiGrip": 12,
+          "backToBack": 0
+        },
+        "classesLower": 0,
+        "classesUpper": 0,
+        "diagrams": 0
+      },
+      {
+        "partitionId": "LR.FR",
+        "name": "handshake hold (right to right)",
+        "gripSizes": [
+          2
+        ],
+        "cells": {
+          "impossible": 0,
+          "weird": 0,
+          "boring": 1,
+          "stable": 3,
+          "mixed": 9,
+          "transition": 3
+        },
+        "representableCells": 12,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 4
+        },
+        "classesLower": 5,
+        "classesUpper": 5,
+        "diagrams": 20
+      },
+      {
+        "partitionId": "none",
+        "name": "no contact",
+        "gripSizes": [],
+        "cells": {
+          "impossible": 0,
+          "weird": 0,
+          "boring": 1,
+          "stable": 0,
+          "mixed": 0,
+          "transition": 15
+        },
+        "representableCells": 16,
+        "unrepresentable": {
+          "multiGrip": 0,
+          "backToBack": 0
+        },
+        "classesLower": 1,
+        "classesUpper": 1,
+        "diagrams": 16
+      }
+    ],
+    "totals": {
+      "diagrams": 298,
+      "classesLower": 167,
+      "classesUpper": 223
+    }
+  },
+  "cells": [
+    {
+      "partitionId": "FL.FR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,FL,FR,FT##FL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT##LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT#-1.2#LL-FL",
+        "LT,LL,FL,FT#1.-2#LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT##LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT#-1.2#LL-FL",
+        "LT,LL,FL,FT#1.-2#LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT#-3.2#LL-FL",
+        "LT,LL,FL,FT#3.-2#LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT#-3.2#LL-FL",
+        "LT,LL,FL,FT#3.-2#LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FL",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT##LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT#-1.2#LL-FL",
+        "LT,LL,FL,FT#1.-2#LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT##LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT#-1.2#LL-FL",
+        "LT,LL,FL,FT#1.-2#LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FL",
+        "FR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT#-3.2#LL-FL",
+        "LT,LL,FL,FT#3.-2#LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FL,FT#-3.2#LL-FL",
+        "LT,LL,FL,FT#3.-2#LL-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "transition",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "FL",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL.FR",
+      "hammerlocks": [
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 0,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[grip:LL.FL|grip:LR.FR=-1];J=q^-4 + 2 + q^4",
+        "c3;lk[grip:LL.FL|grip:LR.FR=1];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-3#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#3#LL-FL|LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 4,
+      "degenerate": 4,
+      "classesLower": 4,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=1];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=-1];J=1 + q^4 + q^8 + q^12",
+        "c3;lk[LT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=1];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-1.-3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-1.3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.-3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.3.-2#LL-FL|LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 16,
+      "degenerate": 16,
+      "classesLower": 8,
+      "fingerprints": [
+        "c3;lk[LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-3];J=-q^-28 + q^-16 + 2q^-12 + q^-8 + q^-4",
+        "c3;lk[LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=1];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=3];J=q^-8 + q^-4 + 2 + q^4 - q^16",
+        "c3;lk[LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-1];J=1 + q^4 + q^8 + q^12",
+        "c3;lk[LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-3];J=-q^-16 + q^-4 + 2 + q^4 + q^8",
+        "c3;lk[LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=1];J=1 + q^4 + q^8 + q^12",
+        "c3;lk[LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=3];J=q^4 + q^8 + 2q^12 + q^16 - q^28"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-2.-4.-1.-3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.-1.3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.1.-3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.1.3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.-1.-3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.-1.3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.1.-3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.1.3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.-1.-3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.-1.3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.1.-3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.1.3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.-1.-3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.-1.3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.1.-3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.1.3.-2#LL-FL|LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "LL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 8,
+      "degenerate": 24,
+      "classesLower": 8,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FL=-2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-24 + q^-12 + q^-8 + q^-4",
+        "c3;lk[LT|grip:LL.FL=-2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=1];J=q^-20 + q^-16 + q^-12 + 1",
+        "c3;lk[LT|grip:LL.FL=-2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-1];J=q^-4 + 2 + q^4",
+        "c3;lk[LT|grip:LL.FL=-2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=1];J=q^-4 + 2 + q^4",
+        "c3;lk[LT|grip:LL.FL=2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-4 + 2 + q^4",
+        "c3;lk[LT|grip:LL.FL=2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=1];J=q^-4 + 2 + q^4",
+        "c3;lk[LT|grip:LL.FL=2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-1];J=1 + q^12 + q^16 + q^20",
+        "c3;lk[LT|grip:LL.FL=2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=1];J=q^4 + q^8 + q^12 + q^24"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-1.-2.3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-1.-2.3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-1.2.3.-4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-1.2.3.-4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.-2.-3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.-2.-3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.2.-3.-4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.2.-3.-4.2#LL-FL|LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 16,
+      "degenerate": 16,
+      "classesLower": 8,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=-3];J=-q^-28 + q^-16 + 2q^-12 + q^-8 + q^-4",
+        "c3;lk[FT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=1];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=3];J=q^-8 + q^-4 + 2 + q^4 - q^16",
+        "c3;lk[FT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=-1];J=1 + q^4 + q^8 + q^12",
+        "c3;lk[FT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=-3];J=-q^-16 + q^-4 + 2 + q^4 + q^8",
+        "c3;lk[FT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=1];J=1 + q^4 + q^8 + q^12",
+        "c3;lk[FT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=3];J=q^4 + q^8 + 2q^12 + q^16 - q^28"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-2.-4.-5.-3.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.-5.3.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.5.-3.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.5.3.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.-5.-3.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.-5.3.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.5.-3.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.5.3.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.-5.-3.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.-5.3.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.5.-3.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.5.3.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.-5.-3.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.-5.3.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.5.-3.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.5.3.-4#LL-FL|LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 32,
+      "degenerate": 96,
+      "classesLower": 16,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FL=-2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-20 + 2q^-12 + q^-4",
+        "c3;lk[FT|grip:LL.FL=-2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-3];J=-q^-36 + q^-32 - 2q^-28 + 3q^-24 - q^-20 + 3q^-16 + q^-8",
+        "c3;lk[FT|grip:LL.FL=-2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=1];J=q^-20 + 2q^-12 + q^-4",
+        "c3;lk[FT|grip:LL.FL=-2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=3];J=q^-16 + 3q^-8 - q^-4 + 3 - 2q^4 + q^8 - q^12",
+        "c3;lk[FT|grip:LL.FL=-2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-1];J=q^-8 + 2 + q^8",
+        "c3;lk[FT|grip:LL.FL=-2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-3];J=-q^-24 + q^-20 - 2q^-16 + 3q^-12 - q^-8 + 3q^-4 + q^4",
+        "c3;lk[FT|grip:LL.FL=-2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=1];J=q^-8 + 2 + q^8",
+        "c3;lk[FT|grip:LL.FL=-2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=3];J=q^-4 + 3q^4 - q^8 + 3q^12 - 2q^16 + q^20 - q^24",
+        "c3;lk[FT|grip:LL.FL=2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-8 + 2 + q^8",
+        "c3;lk[FT|grip:LL.FL=2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-3];J=-q^-24 + q^-20 - 2q^-16 + 3q^-12 - q^-8 + 3q^-4 + q^4",
+        "c3;lk[FT|grip:LL.FL=2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=1];J=q^-8 + 2 + q^8",
+        "c3;lk[FT|grip:LL.FL=2,LT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=3];J=q^-4 + 3q^4 - q^8 + 3q^12 - 2q^16 + q^20 - q^24",
+        "c3;lk[FT|grip:LL.FL=2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-1];J=q^4 + 2q^12 + q^20",
+        "c3;lk[FT|grip:LL.FL=2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-3];J=-q^-12 + q^-8 - 2q^-4 + 3 - q^4 + 3q^8 + q^16",
+        "c3;lk[FT|grip:LL.FL=2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=1];J=q^4 + 2q^12 + q^20",
+        "c3;lk[FT|grip:LL.FL=2,LT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=3];J=q^8 + 3q^16 - q^20 + 3q^24 - 2q^28 + q^32 - q^36"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-2.-4.-5.-1.-3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.-5.-1.3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.-5.1.-3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.-5.1.3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.5.-1.-3.-4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.5.-1.3.-4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.5.1.-3.-4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.-4.5.1.3.-4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.-5.-1.-3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.-5.-1.3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.-5.1.-3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.-5.1.3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.5.-1.-3.-4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.5.-1.3.-4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.5.1.-3.-4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-2.4.5.1.3.-4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.-5.-1.-3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.-5.-1.3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.-5.1.-3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.-5.1.3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.5.-1.-3.-4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.5.-1.3.-4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.5.1.-3.-4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.-4.5.1.3.-4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.-5.-1.-3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.-5.-1.3.4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.-5.1.-3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.-5.1.3.4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.5.-1.-3.-4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.5.-1.3.-4.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.5.1.-3.-4.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#2.4.5.1.3.-4.-2#LL-FL|LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FL",
+        "LL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 4,
+      "degenerate": 4,
+      "classesLower": 4,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=1];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-1];J=1 + q^4 + q^8 + q^12",
+        "c3;lk[FT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=1];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-3.-5.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-3.5.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#3.-5.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#3.5.-4#LL-FL|LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 8,
+      "degenerate": 24,
+      "classesLower": 8,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FR=-2,LT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-20 + 2q^-12 + q^-4",
+        "c3;lk[FT|grip:LR.FR=-2,LT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=1];J=q^-20 + 2q^-12 + q^-4",
+        "c3;lk[FT|grip:LR.FR=-2,LT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=-1];J=q^-8 + 2 + q^8",
+        "c3;lk[FT|grip:LR.FR=-2,LT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=1];J=q^-8 + 2 + q^8",
+        "c3;lk[FT|grip:LR.FR=2,LT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-8 + 2 + q^8",
+        "c3;lk[FT|grip:LR.FR=2,LT|grip:LL.FL=-2,grip:LL.FL|grip:LR.FR=1];J=q^-8 + 2 + q^8",
+        "c3;lk[FT|grip:LR.FR=2,LT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=-1];J=q^4 + 2q^12 + q^20",
+        "c3;lk[FT|grip:LR.FR=2,LT|grip:LL.FL=2,grip:LL.FL|grip:LR.FR=1];J=q^4 + 2q^12 + q^20"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-1.-3.-5.2.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-1.-3.5.2.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-1.3.-5.2.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-1.3.5.2.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.-3.-5.-2.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.-3.5.-2.-4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.3.-5.-2.4#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#1.3.5.-2.-4#LL-FL|LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 8,
+      "degenerate": 24,
+      "classesLower": 8,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FL=-2,FT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-20 + q^-16 + q^-12 + 1",
+        "c3;lk[FT|grip:LL.FL=-2,FT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=1];J=q^-20 + q^-16 + q^-12 + 1",
+        "c3;lk[FT|grip:LL.FL=-2,FT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-1];J=q^-4 + 2 + q^4",
+        "c3;lk[FT|grip:LL.FL=-2,FT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=1];J=q^-4 + 2 + q^4",
+        "c3;lk[FT|grip:LL.FL=2,FT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=-1];J=q^-4 + 2 + q^4",
+        "c3;lk[FT|grip:LL.FL=2,FT|grip:LR.FR=-2,grip:LL.FL|grip:LR.FR=1];J=q^-4 + 2 + q^4",
+        "c3;lk[FT|grip:LL.FL=2,FT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=-1];J=1 + q^12 + q^16 + q^20",
+        "c3;lk[FT|grip:LL.FL=2,FT|grip:LR.FR=2,grip:LL.FL|grip:LR.FR=1];J=1 + q^12 + q^16 + q^20"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-3.-5.4.-3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-3.-5.4.3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-3.5.-4.-3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#-3.5.-4.3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#3.-5.4.-3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#3.-5.4.3.-2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#3.5.-4.-3.2#LL-FL|LR-FR",
+        "LT,LL,LR,FL,FR,FT#3.5.-4.3.-2#LL-FL|LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FL|LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT##LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT#-1.2#LL-FR",
+        "LT,LL,FR,FT#1.-2#LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT##LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT#-1.2#LL-FR",
+        "LT,LL,FR,FT#1.-2#LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT##LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT#-1.2#LL-FR",
+        "LT,LL,FR,FT#1.-2#LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT##LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FL",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LL.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LL.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT#-1.2#LL-FR",
+        "LT,LL,FR,FT#1.-2#LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT#-3.2#LL-FR",
+        "LT,LL,FR,FT#3.-2#LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT#-3.2#LL-FR",
+        "LT,LL,FR,FT#3.-2#LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FL",
+        "FR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT#-3.2#LL-FR",
+        "LT,LL,FR,FT#3.-2#LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LL.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LL.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LL,FR,FT#-3.2#LL-FR",
+        "LT,LL,FR,FT#3.-2#LL-FR"
+      ]
+    },
+    {
+      "partitionId": "LL.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 3,
+      "degenerate": 0,
+      "classesLower": 3,
+      "fingerprints": [
+        "c4;lk[];J=-q^-6 - 3q^-2 - 3q^2 - q^6",
+        "c4;lk[grip:LL.FR|grip:LR.FL=-2];J=-q^-14 - 2q^-10 - 2q^-6 - 2q^-2 - q^2",
+        "c4;lk[grip:LL.FR|grip:LR.FL=2];J=-q^-2 - 2q^2 - 2q^6 - 2q^10 - q^14"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT##LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.2#LL-FR|LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 8,
+      "degenerate": 8,
+      "classesLower": 6,
+      "fingerprints": [
+        "c4;lk[LT|grip:LL.FR=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-22 - q^-18 - 2q^-14 - 2q^-10 - q^-6 - q^-2",
+        "c4;lk[LT|grip:LL.FR=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[LT|grip:LL.FR=-2];J=-q^-14 - 2q^-10 - 2q^-6 - 2q^-2 - q^2",
+        "c4;lk[LT|grip:LL.FR=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[LT|grip:LL.FR=2,grip:LL.FR|grip:LR.FL=2];J=-q^2 - q^6 - 2q^10 - 2q^14 - q^18 - q^22",
+        "c4;lk[LT|grip:LL.FR=2];J=-q^-2 - 2q^2 - 2q^6 - 2q^10 - q^14"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-1.-4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.-4.3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.4.3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-4.-3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.4.-3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.4.3.-2#LL-FR|LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 8,
+      "degenerate": 8,
+      "classesLower": 6,
+      "fingerprints": [
+        "c4;lk[LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-22 - q^-18 - 2q^-14 - 2q^-10 - q^-6 - q^-2",
+        "c4;lk[LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[LT|grip:LR.FL=-2];J=-q^-14 - 2q^-10 - 2q^-6 - 2q^-2 - q^2",
+        "c4;lk[LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=2];J=-q^2 - q^6 - 2q^10 - 2q^14 - q^18 - q^22",
+        "c4;lk[LT|grip:LR.FL=2];J=-q^-2 - 2q^2 - 2q^6 - 2q^10 - q^14"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-2.-3.-1.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.-3.1.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.3.-1.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.3.1.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.-3.-1.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.-3.1.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.3.-1.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.3.1.-2#LL-FR|LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "LL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 16,
+      "degenerate": 48,
+      "classesLower": 12,
+      "fingerprints": [
+        "c4;lk[LT|grip:LL.FR=-2,LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=-2];J=-2q^-26 - 2q^-22 - q^-18 - q^-14 - q^-10 - q^-6",
+        "c4;lk[LT|grip:LL.FR=-2,LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-18 - q^-14 - q^-10 - q^-6 - 2q^-2 - 2q^2",
+        "c4;lk[LT|grip:LL.FR=-2,LT|grip:LR.FL=-2];J=-q^-22 - q^-18 - 2q^-14 - 2q^-10 - q^-6 - q^-2",
+        "c4;lk[LT|grip:LL.FR=-2,LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-22 + q^-18 - q^-14 - 2q^-10 - 2q^-6 - 2q^-2 - q^6",
+        "c4;lk[LT|grip:LL.FR=-2,LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=2];J=-2q^-2 - 2q^2 - q^6 - q^10 - q^14 - q^18",
+        "c4;lk[LT|grip:LL.FR=-2,LT|grip:LR.FL=2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[LT|grip:LL.FR=2,LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-18 - q^-14 - q^-10 - q^-6 - 2q^-2 - 2q^2",
+        "c4;lk[LT|grip:LL.FR=2,LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-6 - 2q^2 - 2q^6 - 2q^10 - q^14 + q^18 - q^22",
+        "c4;lk[LT|grip:LL.FR=2,LT|grip:LR.FL=-2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[LT|grip:LL.FR=2,LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=-2];J=-2q^-2 - 2q^2 - q^6 - q^10 - q^14 - q^18",
+        "c4;lk[LT|grip:LL.FR=2,LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=2];J=-q^6 - q^10 - q^14 - q^18 - 2q^22 - 2q^26",
+        "c4;lk[LT|grip:LL.FR=2,LT|grip:LR.FL=2];J=-q^2 - q^6 - 2q^10 - 2q^14 - q^18 - q^22"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-1.-2.3.4.-3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.-2.3.4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.-2.3.4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.-2.3.4.3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.2.-3.4.-3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.2.-3.4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.2.-3.4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.2.-3.4.3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-2.3.-4.-3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-2.3.-4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-2.3.-4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-2.3.-4.3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.2.-3.-4.-3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.2.-3.-4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.2.-3.-4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.2.-3.-4.3.2#LL-FR|LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 8,
+      "degenerate": 8,
+      "classesLower": 6,
+      "fingerprints": [
+        "c4;lk[FT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-22 - q^-18 - 2q^-14 - 2q^-10 - q^-6 - q^-2",
+        "c4;lk[FT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LR.FL=-2];J=-q^-14 - 2q^-10 - 2q^-6 - 2q^-2 - q^2",
+        "c4;lk[FT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=2];J=-q^2 - q^6 - 2q^10 - 2q^14 - q^18 - q^22",
+        "c4;lk[FT|grip:LR.FL=2];J=-q^-2 - 2q^2 - 2q^6 - 2q^10 - q^14"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-4.-5.-3.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.-5.3.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.5.-3.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.5.3.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.-5.-3.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.-5.3.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.5.-3.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.5.3.-4#LL-FR|LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 16,
+      "degenerate": 48,
+      "classesLower": 12,
+      "fingerprints": [
+        "c4;lk[FT|grip:LR.FL=-2,LT|grip:LL.FR=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-30 - 3q^-22 - 3q^-14 - q^-6",
+        "c4;lk[FT|grip:LR.FL=-2,LT|grip:LL.FR=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-18 - 3q^-10 - 3q^-2 - q^6",
+        "c4;lk[FT|grip:LR.FL=-2,LT|grip:LL.FR=-2];J=-q^-22 - q^-18 - 2q^-14 - 2q^-10 - q^-6 - q^-2",
+        "c4;lk[FT|grip:LR.FL=-2,LT|grip:LL.FR=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-18 - 3q^-10 - 3q^-2 - q^6",
+        "c4;lk[FT|grip:LR.FL=-2,LT|grip:LL.FR=2,grip:LL.FR|grip:LR.FL=2];J=-q^-6 - 3q^2 - 3q^10 - q^18",
+        "c4;lk[FT|grip:LR.FL=-2,LT|grip:LL.FR=2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LR.FL=2,LT|grip:LL.FR=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-18 - 3q^-10 - 3q^-2 - q^6",
+        "c4;lk[FT|grip:LR.FL=2,LT|grip:LL.FR=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-6 - 3q^2 - 3q^10 - q^18",
+        "c4;lk[FT|grip:LR.FL=2,LT|grip:LL.FR=-2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LR.FL=2,LT|grip:LL.FR=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-6 - 3q^2 - 3q^10 - q^18",
+        "c4;lk[FT|grip:LR.FL=2,LT|grip:LL.FR=2,grip:LL.FR|grip:LR.FL=2];J=-q^6 - 3q^14 - 3q^22 - q^30",
+        "c4;lk[FT|grip:LR.FL=2,LT|grip:LL.FR=2];J=-q^2 - q^6 - 2q^10 - 2q^14 - q^18 - q^22"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-1.-4.-5.-3.4.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.-4.-5.3.4.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.-4.5.-3.-4.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.-4.5.3.-4.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.4.-5.-3.4.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.4.-5.3.4.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.4.5.-3.-4.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-1.4.5.3.-4.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-4.-5.-3.4.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-4.-5.3.4.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-4.5.-3.-4.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.-4.5.3.-4.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.4.-5.-3.4.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.4.-5.3.4.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.4.5.-3.-4.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#1.4.5.3.-4.-2#LL-FR|LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FL",
+        "LL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 8,
+      "degenerate": 8,
+      "classesLower": 6,
+      "fingerprints": [
+        "c4;lk[FT|grip:LL.FR=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-22 - q^-18 - 2q^-14 - 2q^-10 - q^-6 - q^-2",
+        "c4;lk[FT|grip:LL.FR=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LL.FR=-2];J=-q^-14 - 2q^-10 - 2q^-6 - 2q^-2 - q^2",
+        "c4;lk[FT|grip:LL.FR=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LL.FR=2,grip:LL.FR|grip:LR.FL=2];J=-q^2 - q^6 - 2q^10 - 2q^14 - q^18 - q^22",
+        "c4;lk[FT|grip:LL.FR=2];J=-q^-2 - 2q^2 - 2q^6 - 2q^10 - q^14"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-2.-3.-5.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.-3.5.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.3.-5.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.3.5.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.-3.-5.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.-3.5.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.3.-5.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.3.5.-4#LL-FR|LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 16,
+      "degenerate": 48,
+      "classesLower": 12,
+      "fingerprints": [
+        "c4;lk[FT|grip:LL.FR=-2,LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-30 - 3q^-22 - 3q^-14 - q^-6",
+        "c4;lk[FT|grip:LL.FR=-2,LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-18 - 3q^-10 - 3q^-2 - q^6",
+        "c4;lk[FT|grip:LL.FR=-2,LT|grip:LR.FL=-2];J=-q^-22 - q^-18 - 2q^-14 - 2q^-10 - q^-6 - q^-2",
+        "c4;lk[FT|grip:LL.FR=-2,LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-18 - 3q^-10 - 3q^-2 - q^6",
+        "c4;lk[FT|grip:LL.FR=-2,LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=2];J=-q^-6 - 3q^2 - 3q^10 - q^18",
+        "c4;lk[FT|grip:LL.FR=-2,LT|grip:LR.FL=2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LL.FR=2,LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-18 - 3q^-10 - 3q^-2 - q^6",
+        "c4;lk[FT|grip:LL.FR=2,LT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-6 - 3q^2 - 3q^10 - q^18",
+        "c4;lk[FT|grip:LL.FR=2,LT|grip:LR.FL=-2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LL.FR=2,LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-6 - 3q^2 - 3q^10 - q^18",
+        "c4;lk[FT|grip:LL.FR=2,LT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=2];J=-q^6 - 3q^14 - 3q^22 - q^30",
+        "c4;lk[FT|grip:LL.FR=2,LT|grip:LR.FL=2];J=-q^2 - q^6 - 2q^10 - 2q^14 - q^18 - q^22"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-2.-3.-5.-1.2.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.-3.-5.1.-2.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.-3.5.-1.2.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.-3.5.1.-2.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.3.-5.-1.2.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.3.-5.1.-2.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.3.5.-1.2.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-2.3.5.1.-2.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.-3.-5.-1.2.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.-3.-5.1.-2.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.-3.5.-1.2.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.-3.5.1.-2.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.3.-5.-1.2.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.3.-5.1.-2.4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.3.5.-1.2.-4#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#2.3.5.1.-2.-4#LL-FR|LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 16,
+      "degenerate": 48,
+      "classesLower": 12,
+      "fingerprints": [
+        "c4;lk[FT|grip:LL.FR=-2,FT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-30 - 2q^-22 - 2q^-18 - 2q^-14 - q^-10 + q^-6 - q^-2",
+        "c4;lk[FT|grip:LL.FR=-2,FT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=2];J=-q^-18 - q^-14 - q^-10 - q^-6 - 2q^-2 - 2q^2",
+        "c4;lk[FT|grip:LL.FR=-2,FT|grip:LR.FL=-2];J=-q^-22 - q^-18 - 2q^-14 - 2q^-10 - q^-6 - q^-2",
+        "c4;lk[FT|grip:LL.FR=-2,FT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=-2];J=-q^-18 - q^-14 - q^-10 - q^-6 - 2q^-2 - 2q^2",
+        "c4;lk[FT|grip:LL.FR=-2,FT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=2];J=-2q^-2 - 2q^2 - q^6 - q^10 - q^14 - q^18",
+        "c4;lk[FT|grip:LL.FR=-2,FT|grip:LR.FL=2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LL.FR=2,FT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=-2];J=-q^-18 - q^-14 - q^-10 - q^-6 - 2q^-2 - 2q^2",
+        "c4;lk[FT|grip:LL.FR=2,FT|grip:LR.FL=-2,grip:LL.FR|grip:LR.FL=2];J=-2q^-2 - 2q^2 - q^6 - q^10 - q^14 - q^18",
+        "c4;lk[FT|grip:LL.FR=2,FT|grip:LR.FL=-2];J=-q^-10 - q^-6 - 2q^-2 - 2q^2 - q^6 - q^10",
+        "c4;lk[FT|grip:LL.FR=2,FT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=-2];J=-2q^-2 - 2q^2 - q^6 - q^10 - q^14 - q^18",
+        "c4;lk[FT|grip:LL.FR=2,FT|grip:LR.FL=2,grip:LL.FR|grip:LR.FL=2];J=-q^2 + q^6 - q^10 - 2q^14 - 2q^18 - 2q^22 - q^30",
+        "c4;lk[FT|grip:LL.FR=2,FT|grip:LR.FL=2];J=-q^2 - q^6 - 2q^10 - 2q^14 - q^18 - q^22"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT#-4.-5.-3.4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.-5.-3.4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.-5.3.4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.-5.3.4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.5.-3.-4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.5.-3.-4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.5.3.-4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#-4.5.3.-4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.-5.-3.4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.-5.-3.4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.-5.3.4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.-5.3.4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.5.-3.-4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.5.-3.-4.3.-2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.5.3.-4.-3.2#LL-FR|LR-FL",
+        "LT,LL,LR,FL,FR,FT#4.5.3.-4.3.-2#LL-FR|LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.FR|LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FT##LL-LR"
+      ]
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "transition",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL.FR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL.FR",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL.FR",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL.FR",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL.FR",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL.FR",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL.FR",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL.FR",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FL.FR",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "transition",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LL.LR|FL.FR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 3,
+      "degenerate": 0,
+      "classesLower": 3,
+      "fingerprints": [
+        "c4;lk[];J=-q^-6 - 3q^-2 - 3q^2 - q^6",
+        "c4;lk[grip:FL.FR|grip:LL.LR=-2];J=-q^-14 - 2q^-10 - 2q^-6 - 2q^-2 - q^2",
+        "c4;lk[grip:FL.FR|grip:LL.LR=2];J=-q^-2 - 2q^2 - 2q^6 - 2q^10 - q^14"
+      ],
+      "constructionKeys": [
+        "LT,LL,LR,FL,FR,FT##LL-LR|FL-FR",
+        "LT,LL,LR,FL,FR,FT#-3.-3#LL-LR|FL-FR",
+        "LT,LL,LR,FL,FR,FT#3.3#LL-LR|FL-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT##LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT##LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LR.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT#-1.2#LR-FL",
+        "LT,LR,FL,FT#1.-2#LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LR.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT#-1.2#LR-FL",
+        "LT,LR,FL,FT#1.-2#LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT#-3.2#LR-FL",
+        "LT,LR,FL,FT#3.-2#LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT#-3.2#LR-FL",
+        "LT,LR,FL,FT#3.-2#LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FL",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT##LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT##LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LR.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT#-1.2#LR-FL",
+        "LT,LR,FL,FT#1.-2#LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LR.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT#-1.2#LR-FL",
+        "LT,LR,FL,FT#1.-2#LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT#-3.2#LR-FL",
+        "LT,LR,FL,FT#3.-2#LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FL=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FL=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FL,FT#-3.2#LR-FL",
+        "LT,LR,FL,FT#3.-2#LR-FL"
+      ]
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "transition",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "FL",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FL.FR",
+      "hammerlocks": [
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "multi-grip",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT##LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT##LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LR.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT#-1.2#LR-FR",
+        "LT,LR,FR,FT#1.-2#LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LR.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT#-1.2#LR-FR",
+        "LT,LR,FR,FT#1.-2#LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT##LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c3;lk[];J=q^-4 + 2 + q^4"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT##LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LR.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT#-1.2#LR-FR",
+        "LT,LR,FR,FT#1.-2#LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FL",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[LT|grip:LR.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[LT|grip:LR.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT#-1.2#LR-FR",
+        "LT,LR,FR,FT#1.-2#LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "stable",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT#-3.2#LR-FR",
+        "LT,LR,FR,FT#3.-2#LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT#-3.2#LR-FR",
+        "LT,LR,FR,FT#3.-2#LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "stable",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT#-3.2#LR-FR",
+        "LT,LR,FR,FT#3.-2#LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL"
+      ],
+      "category": "mixed",
+      "representable": true,
+      "diagrams": 2,
+      "degenerate": 2,
+      "classesLower": 2,
+      "fingerprints": [
+        "c3;lk[FT|grip:LR.FR=-2];J=q^-12 + q^-8 + q^-4 + 1",
+        "c3;lk[FT|grip:LR.FR=2];J=1 + q^4 + q^8 + q^12"
+      ],
+      "constructionKeys": [
+        "LT,LR,FR,FT#-3.2#LR-FR",
+        "LT,LR,FR,FT#3.-2#LR-FR"
+      ]
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "LR.FR",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "mixed",
+      "representable": false,
+      "reason": "back-to-back",
+      "diagrams": 0,
+      "degenerate": 0,
+      "classesLower": 0,
+      "fingerprints": [],
+      "constructionKeys": []
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [],
+      "category": "boring",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "LL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "LL",
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FL",
+        "LL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FL",
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FL",
+        "LL",
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FR",
+        "LL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FR",
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FL",
+        "FR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    },
+    {
+      "partitionId": "none",
+      "hammerlocks": [
+        "FL",
+        "FR",
+        "LL",
+        "LR"
+      ],
+      "category": "transition",
+      "representable": true,
+      "diagrams": 1,
+      "degenerate": 0,
+      "classesLower": 1,
+      "fingerprints": [
+        "c2;lk[];J=-q^-2 - q^2"
+      ],
+      "constructionKeys": [
+        "LT,FT##"
+      ]
+    }
+  ]
+}

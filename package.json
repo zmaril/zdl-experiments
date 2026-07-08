@@ -8,6 +8,7 @@
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
+    "enumerate": "npm run build && node dist/enumerate/run.js",
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
@@ -17,6 +18,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^26.1.1",
     "typescript": "^6.0.3",
     "vitest": "^4.1.10"
   }
